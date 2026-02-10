@@ -134,7 +134,7 @@
     },
     {
       "id": 8, "name": "ماجستير أصول الفقه", "level": "ماجستير", "department": "قسم الشريعة",
-      "baselineProgress": 50,
+      "baselineProgress": 55,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -150,12 +150,12 @@
     },
     {
       "id": 9, "name": "ماجستير الفقه", "level": "ماجستير", "department": "قسم الشريعة",
-      "baselineProgress": 50,
+      "baselineProgress": 55,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 3, "status": "تم", "completionPct": 100, "notes": "" },
-        { "stepId": 4, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
+        { "stepId": 4, "status": "تم", "completionPct": 0, "notes": "" },
         { "stepId": 5, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
         { "stepId": 6, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
         { "stepId": 7, "status": "لم يبدأ", "completionPct": 0, "notes": "" },

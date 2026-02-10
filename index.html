@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لوحة متابعة اعتماد البرامج الأكاديمية | كلية الشريعة والأنظمة</title>
+    <title>لوحة متابعة اعتماد البرامج في كلية الشريعة والأنظمة | جامعة الطائف</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -139,6 +139,44 @@
 
         .hero-accent {
             color: var(--accent-light);
+        }
+
+        .hero-slogan {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: linear-gradient(135deg, rgba(200,149,46,0.15) 0%, rgba(200,149,46,0.05) 100%);
+            border: 1px solid rgba(200,149,46,0.25);
+            border-radius: 16px;
+            padding: 18px 28px;
+            margin-top: 8px;
+        }
+
+        .slogan-icon {
+            font-size: 36px;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .slogan-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .slogan-text {
+            font-family: 'Readex Pro', sans-serif;
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--accent-light);
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+        }
+
+        .slogan-sub {
+            font-size: 14px;
+            color: rgba(255,255,255,0.55);
+            font-weight: 400;
         }
 
         .last-updated {
@@ -902,6 +940,8 @@
             .hero-content, .countdown-inner, .main { padding-left: 20px; padding-right: 20px; }
             .hero-title { font-size: 24px; }
             .hero-top { flex-direction: column; align-items: flex-start; gap: 12px; }
+            .hero-slogan { flex-direction: column; text-align: center; padding: 16px 20px; gap: 10px; }
+            .slogan-text { font-size: 20px; }
             .countdown-inner { flex-direction: column; text-align: center; }
             .countdown-dates { justify-content: center; }
             .countdown-value { font-size: 28px; }
@@ -945,13 +985,21 @@
         <div class="hero-top">
             <div>
                 <div class="hero-university">جامعة الطائف</div>
-                <h1 class="hero-title">لوحة متابعة اعتماد البرامج الأكاديمية</h1>
-                <div class="hero-subtitle">كلية الشريعة والأنظمة — <span class="hero-accent">15 برنامجاً أكاديمياً</span></div>
+                <h1 class="hero-title">لوحة متابعة اعتماد البرامج في كلية الشريعة والأنظمة</h1>
+                <div class="hero-subtitle"><span class="hero-accent">15 برنامجاً أكاديمياً</span> — بكالوريوس · ماجستير · دكتوراه</div>
                 <div class="last-updated" id="lastUpdated"></div>
             </div>
             <div class="hero-badge">
                 <span class="dot"></span>
                 <span>تحديث مباشر</span>
+            </div>
+        </div>
+        <!-- SLOGAN -->
+        <div class="hero-slogan">
+            <div class="slogan-icon">🏆</div>
+            <div class="slogan-content">
+                <div class="slogan-text">٥٠٠ يوم للإنجاز الكامل</div>
+                <div class="slogan-sub">رحلة اعتماد جميع البرامج الأكاديمية في الكلية</div>
             </div>
         </div>
     </div>
@@ -1119,7 +1167,7 @@
 
 <!-- FOOTER -->
 <footer class="footer">
-    <p>لوحة متابعة اعتماد البرامج الأكاديمية — كلية الشريعة والأنظمة — <a href="#">جامعة الطائف</a></p>
+    <p>لوحة متابعة اعتماد البرامج في كلية الشريعة والأنظمة — <a href="#">جامعة الطائف</a></p>
     <p style="margin-top:6px;color:var(--text-muted)">لتحديث بيانات الإنجاز، عدّل ملف <code style="background:#F0ECE4;padding:2px 8px;border-radius:4px;font-size:12px">data.json</code> في المستودع</p>
 </footer>
 
@@ -1172,8 +1220,11 @@ function getExpectedProgress() {
     const start = new Date(DATA.config.startDate + 'T00:00:00');
     const now = new Date();
     const totalMs = DATA.config.totalDays * 24 * 60 * 60 * 1000;
-    const elapsedMs = now - start;
-    const pct = Math.min(100, Math.max(0, (elapsedMs / totalMs) * 100));
+    const elapsedMs = Math.max(0, now - start);
+    const timeRatio = Math.min(1, elapsedMs / totalMs);
+    // Expected starts at baseline (actual at day 0) and reaches 100% at day 500
+    const baseline = DATA.config.baselineProgress || 0;
+    const pct = baseline + timeRatio * (100 - baseline);
     return Math.round(pct * 10) / 10;
 }
 

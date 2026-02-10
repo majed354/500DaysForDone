@@ -16,7 +16,7 @@
     { "id": 6, "name": "التحضير لما قبل الزيارة", "weight": 12, "description": "غرفة أدلة منظمة، جاهزية المقابلات، محاكاة زيارة، ترتيب البيانات والفرق" },
     { "id": 7, "name": "الزيارة الخارجية", "weight": 6, "description": "مقابلات، فحص وثائق، تحقق من المرافق، استيضاحات الفريق" },
     { "id": 8, "name": "ما بعد الزيارة وإغلاق الملاحظات", "weight": 7, "description": "مراجعة دقة الحقائق بالتقرير، الردود النظامية، تبريرات/أدلة داعمة" },
-    { "id": 9, "name": "قرار الاعتماد", "weight": 5, "description": "صدور القرار (كامل/مشروط/رفض) وتنفيذ أي شروط عاجلة" },
+    { "id": 9, "name": "قرار الاعتماد", "weight": 5, "description": "صدور قرار الاعتماد الكامل وتنفيذ إصلاحات الاعتماد المشروط" },
     { "id": 10, "name": "ما بعد القرار والاستدامة", "weight": 5, "description": "ملفات سنوية ومؤشرات أداء، تقارير متابعة دورية، التحضير لإعادة الاعتماد" }
   ],
   "programs": [
@@ -134,7 +134,7 @@
     },
     {
       "id": 8, "name": "ماجستير أصول الفقه", "level": "ماجستير", "department": "قسم الشريعة",
-      "baselineProgress": 30,
+      "baselineProgress": 50,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -150,7 +150,7 @@
     },
     {
       "id": 9, "name": "ماجستير الفقه", "level": "ماجستير", "department": "قسم الشريعة",
-      "baselineProgress": 30,
+      "baselineProgress": 50,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },

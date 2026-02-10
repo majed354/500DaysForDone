@@ -5,7 +5,6 @@
     "projectTitle": "مشروع اعتماد البرامج الأكاديمية",
     "startDate": "2026-02-11",
     "totalDays": 500,
-    "baselineProgress": 38.3,
     "lastUpdated": "2026-02-11"
   },
   "accreditationSteps": [
@@ -17,15 +16,13 @@
     { "id": 6, "name": "التحضير لما قبل الزيارة", "weight": 12, "description": "غرفة أدلة منظمة، جاهزية المقابلات، محاكاة زيارة، ترتيب البيانات والفرق" },
     { "id": 7, "name": "الزيارة الخارجية", "weight": 6, "description": "مقابلات، فحص وثائق، تحقق من المرافق، استيضاحات الفريق" },
     { "id": 8, "name": "ما بعد الزيارة وإغلاق الملاحظات", "weight": 7, "description": "مراجعة دقة الحقائق بالتقرير، الردود النظامية، تبريرات/أدلة داعمة" },
-    { "id": 9, "name": "قرار الاعتماد", "weight": 5, "description": "صدور قرار الاعتماد الكامل وتنفيذ إصلاحات الاعتماد المشروط" },
+    { "id": 9, "name": "قرار الاعتماد", "weight": 5, "description": "صدور القرار (كامل/مشروط/رفض) وتنفيذ أي شروط عاجلة" },
     { "id": 10, "name": "ما بعد القرار والاستدامة", "weight": 5, "description": "ملفات سنوية ومؤشرات أداء، تقارير متابعة دورية، التحضير لإعادة الاعتماد" }
   ],
   "programs": [
     {
-      "id": 1,
-      "name": "بكالوريوس الشريعة",
-      "level": "بكالوريوس",
-      "department": "قسم الشريعة",
+      "id": 1, "name": "بكالوريوس الشريعة", "level": "بكالوريوس", "department": "قسم الشريعة",
+      "baselineProgress": 90,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -40,10 +37,8 @@
       ]
     },
     {
-      "id": 2,
-      "name": "بكالوريوس القراءات",
-      "level": "بكالوريوس",
-      "department": "قسم القراءات",
+      "id": 2, "name": "بكالوريوس القراءات", "level": "بكالوريوس", "department": "قسم القراءات",
+      "baselineProgress": 90,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -58,10 +53,8 @@
       ]
     },
     {
-      "id": 3,
-      "name": "بكالوريوس الأنظمة",
-      "level": "بكالوريوس",
-      "department": "قسم الأنظمة",
+      "id": 3, "name": "بكالوريوس الأنظمة", "level": "بكالوريوس", "department": "قسم الأنظمة",
+      "baselineProgress": 90,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -76,10 +69,8 @@
       ]
     },
     {
-      "id": 4,
-      "name": "بكالوريوس الدراسات الإسلامية",
-      "level": "بكالوريوس",
-      "department": "قسم الدراسات الإسلامية",
+      "id": 4, "name": "بكالوريوس الدراسات الإسلامية", "level": "بكالوريوس", "department": "قسم الدراسات الإسلامية",
+      "baselineProgress": 50,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -94,10 +85,8 @@
       ]
     },
     {
-      "id": 5,
-      "name": "بكالوريوس القرآن وعلومه",
-      "level": "بكالوريوس",
-      "department": "قسم القراءات",
+      "id": 5, "name": "بكالوريوس القرآن وعلومه", "level": "بكالوريوس", "department": "قسم القراءات",
+      "baselineProgress": 50,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -112,10 +101,8 @@
       ]
     },
     {
-      "id": 6,
-      "name": "ماجستير الدراسات القرآنية المعاصرة",
-      "level": "ماجستير",
-      "department": "قسم القراءات",
+      "id": 6, "name": "ماجستير الدراسات القرآنية المعاصرة", "level": "ماجستير", "department": "قسم القراءات",
+      "baselineProgress": 30,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -130,10 +117,8 @@
       ]
     },
     {
-      "id": 7,
-      "name": "ماجستير القراءات",
-      "level": "ماجستير",
-      "department": "قسم القراءات",
+      "id": 7, "name": "ماجستير القراءات", "level": "ماجستير", "department": "قسم القراءات",
+      "baselineProgress": 65,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -148,10 +133,8 @@
       ]
     },
     {
-      "id": 8,
-      "name": "ماجستير أصول الفقه",
-      "level": "ماجستير",
-      "department": "قسم الشريعة",
+      "id": 8, "name": "ماجستير أصول الفقه", "level": "ماجستير", "department": "قسم الشريعة",
+      "baselineProgress": 30,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -166,10 +149,8 @@
       ]
     },
     {
-      "id": 9,
-      "name": "ماجستير الفقه",
-      "level": "ماجستير",
-      "department": "قسم الشريعة",
+      "id": 9, "name": "ماجستير الفقه", "level": "ماجستير", "department": "قسم الشريعة",
+      "baselineProgress": 30,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -184,10 +165,8 @@
       ]
     },
     {
-      "id": 10,
-      "name": "ماجستير القانون",
-      "level": "ماجستير",
-      "department": "قسم الأنظمة",
+      "id": 10, "name": "ماجستير القانون", "level": "ماجستير", "department": "قسم الأنظمة",
+      "baselineProgress": 50,
       "steps": [
         { "stepId": 1, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 2, "status": "تم", "completionPct": 100, "notes": "" },
@@ -202,10 +181,8 @@
       ]
     },
     {
-      "id": 11,
-      "name": "ماجستير العقيدة",
-      "level": "ماجستير",
-      "department": "قسم الشريعة",
+      "id": 11, "name": "ماجستير العقيدة", "level": "ماجستير", "department": "قسم الشريعة",
+      "baselineProgress": 0,
       "steps": [
         { "stepId": 1, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
         { "stepId": 2, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
@@ -220,10 +197,8 @@
       ]
     },
     {
-      "id": 12,
-      "name": "دكتوراه القراءات",
-      "level": "دكتوراه",
-      "department": "قسم القراءات",
+      "id": 12, "name": "دكتوراه القراءات", "level": "دكتوراه", "department": "قسم القراءات",
+      "baselineProgress": 0,
       "steps": [
         { "stepId": 1, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
         { "stepId": 2, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
@@ -238,10 +213,8 @@
       ]
     },
     {
-      "id": 13,
-      "name": "دكتوراه الدراسات القرآنية",
-      "level": "دكتوراه",
-      "department": "قسم القراءات",
+      "id": 13, "name": "دكتوراه الدراسات القرآنية", "level": "دكتوراه", "department": "قسم القراءات",
+      "baselineProgress": 0,
       "steps": [
         { "stepId": 1, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
         { "stepId": 2, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
@@ -256,10 +229,8 @@
       ]
     },
     {
-      "id": 14,
-      "name": "دكتوراه الفقه",
-      "level": "دكتوراه",
-      "department": "قسم الشريعة",
+      "id": 14, "name": "دكتوراه الفقه", "level": "دكتوراه", "department": "قسم الشريعة",
+      "baselineProgress": 0,
       "steps": [
         { "stepId": 1, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
         { "stepId": 2, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
@@ -274,10 +245,8 @@
       ]
     },
     {
-      "id": 15,
-      "name": "دكتوراه أصول الفقه",
-      "level": "دكتوراه",
-      "department": "قسم الشريعة",
+      "id": 15, "name": "دكتوراه أصول الفقه", "level": "دكتوراه", "department": "قسم الشريعة",
+      "baselineProgress": 0,
       "steps": [
         { "stepId": 1, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
         { "stepId": 2, "status": "لم يبدأ", "completionPct": 0, "notes": "" },

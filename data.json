@@ -32,8 +32,8 @@
         { "stepId": 6, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 7, "status": "تم", "completionPct": 100, "notes": "" },
         { "stepId": 8, "status": "تم", "completionPct": 100, "notes": "" },
-        { "stepId": 9, "status": "لم يبدأ", "completionPct": 0, "notes": "" },
-        { "stepId": 10, "status": "لم يبدأ", "completionPct": 0, "notes": "" }
+        { "stepId": 9, "status": "تم", "completionPct": 0, "notes": "" },
+        { "stepId": 10, "status": "تم", "completionPct": 0, "notes": "" }
       ]
     },
     {
